@@ -25,3 +25,17 @@ boogerButton.addEventListener('click', () => {
     // update the textContent of the span
     boogerSpan.textContent = sum;
 });
+
+const subInput1 = document.getElementById('sub-input-1');
+const subInput2 = document.getElementById('sub-input-2');
+const subButton = document.getElementById('sub-button');
+const subResult = document.getElementById('sub-result');
+
+subButton.addEventListener('click', () => {
+    const value1 = subInput1.value;
+    const value2 = subInput2.value;
+
+    const sub = Number(value1) - Number(value2);
+
+    subResult.textContent = sub;
+});
