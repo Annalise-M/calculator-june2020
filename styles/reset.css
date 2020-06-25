@@ -7,7 +7,7 @@
 *{
 	box-sizing: border-box;
 	background-image: url('https://giphy.com/gifs/reaction-BmmfETghGOPrW');
-	background-repeat: unset;
+	background: repeat;
 }
 
 html, body {
