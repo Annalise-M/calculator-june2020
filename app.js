@@ -1,3 +1,5 @@
+import { add, subtract, multiply, divided } from './utils.js';
+
 // get dom elements
 // get add-input-1
 const addInput1 = document.getElementById('add-input-1');
@@ -20,7 +22,8 @@ boogerButton.addEventListener('click', () => {
     const value2 = addInput2.value;
 
     // add the two values together
-    const sum = Number(value1) + Number(value2);
+
+    const sum = add(value1, value2);
 
     // update the textContent of the span
     boogerSpan.textContent = sum;
@@ -35,7 +38,7 @@ subButton.addEventListener('click', () => {
     const value1 = subInput1.value;
     const value2 = subInput2.value;
 
-    const sub = Number(value1) - Number(value2);
+    const sub = subtract(value1, value2);
 
     subResult.textContent = sub;
 });
@@ -49,7 +52,7 @@ multButton.addEventListener('click', () => {
     const value1 = multInput1.value;
     const value2 = multInput2.value;
 
-    const mult = Number(value1) * Number(value2);
+    const mult = multiply(value1, value2);
 
     multResult.textContent = mult;
 
@@ -64,8 +67,8 @@ divideButton.addEventListener('click', () => {
     const value1 = divideInput1.value;
     const value2 = divideInput2.value;
 
-    const divide = Number(value1) / Number(value2);
+    const divide = divided(value1, value2);
 
     divideResult.textContent = divide;
-    
+
 });
