@@ -5,12 +5,13 @@
 */
 
 *{
-    box-sizing: border-box;
+	box-sizing: border-box;
+	background-image: url('https://giphy.com/gifs/reaction-BmmfETghGOPrW');
 }
 
 html, body {
     height: 100%;
-    width: 100%;
+	width: 100%;
 }
 
 html, body, div, span, applet, object, iframe,

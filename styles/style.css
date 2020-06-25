@@ -19,7 +19,8 @@ body {
     --footer-height: 25px;
     
     font-family: 'Titillium Web', sans-serif;
-    background-color: var(--color2);
+    /* background-color: var(--color2); */
+    background-image: url("https://media2.giphy.com/media/BmmfETghGOPrW/giphy.gif?cid=ecf05e47c750ef3e2f7bd3874fde351a54ffcadede01f5f2&rid=giphy.gif");
 }
 
 main {
@@ -77,8 +78,6 @@ h2 {
 header img {
     height: var(--header-height);
 }
-
-
 
 content {
     width: 80%;
