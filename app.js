@@ -54,3 +54,18 @@ multButton.addEventListener('click', () => {
     multResult.textContent = mult;
 
 });
+
+const divideInput1 = document.getElementById('divide-input-1');
+const divideInput2 = document.getElementById('divide-input-2');
+const divideButton = document.getElementById('divide-button');
+const divideResult = document.getElementById('divide-result');
+
+divideButton.addEventListener('click', () => {
+    const value1 = divideInput1.value;
+    const value2 = divideInput2.value;
+
+    const divide = Number(value1) / Number(value2);
+
+    divideResult.textContent = divide;
+    
+});
