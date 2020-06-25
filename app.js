@@ -39,3 +39,18 @@ subButton.addEventListener('click', () => {
 
     subResult.textContent = sub;
 });
+
+const multInput1 = document.getElementById('mult-input-1');
+const multInput2 = document.getElementById('mult-input-2');
+const multButton = document.getElementById('mult-button');
+const multResult = document.getElementById('mult-result');
+
+multButton.addEventListener('click', () => {
+    const value1 = multInput1.value;
+    const value2 = multInput2.value;
+
+    const mult = Number(value1) * Number(value2);
+
+    multResult.textContent = mult;
+
+});
