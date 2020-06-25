@@ -4,7 +4,7 @@ import { add } from '../utils.js';
 
 const test = QUnit.test;
 
-test('it should return 21 when passed 11 and 10', (expect) => {
+test('add - it should return 21 when passed 11 and 10', (expect) => {
     //Arrange
     // Set up your arguments and expectations
     const num1 = 11;
@@ -20,3 +20,12 @@ test('it should return 21 when passed 11 and 10', (expect) => {
     expect.equal(actual, expected);
 });
 
+test('add- it should return 40 when passing 25 and 15', (expect) => {
+    const booger1 = 25;
+    const booger2 = 15;
+    const expected = 40;
+
+    const actual = add(booger1, booger2);
+
+    expect.equal(actual, expected);
+})
