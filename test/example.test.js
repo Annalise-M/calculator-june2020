@@ -28,4 +28,14 @@ test('add- it should return 40 when passing 25 and 15', (expect) => {
     const actual = add(booger1, booger2);
 
     expect.equal(actual, expected);
-})
+});
+
+test('add- should return 13 when passing 8 and 5', (expect) => {
+    const butt1 = 8;
+    const butt2 = 5;
+    const expected = 13;
+
+    const actual = add(butt1, butt2);
+
+    expect.equal(actual, expected);
+});
